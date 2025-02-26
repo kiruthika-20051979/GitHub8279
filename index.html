@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Digital Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Digital Art Gallery</h1>
+        <p>Upload and showcase your artwork!</p>
+    </header>
+
+    <main>
+        <!-- Upload Form Section -->
+        <section id="upload-form">
+            <h2>Upload Artwork</h2>
+            <form id="artwork-form">
+                <input type="text" id="title" name="title" placeholder="Title of Artwork" required />
+                <textarea id="description" name="description" placeholder="Description of Artwork" required></textarea>
+                <input type="file" id="image" name="image" accept="image/*" required />
+                <button type="submit">Submit Artwork</button>
+            </form>
+        </section>
+
+        <!-- Gallery Display Section -->
+        <section id="gallery">
+            <h2>Artworks</h2>
+            <div id="gallery-container" class="gallery-grid">
+                <!-- Dynamically populated artworks will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Digital Art Gallery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
